@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -19,11 +21,19 @@
 }
 
 /* Classes Reutilizaveis */
-
 .container {
     width: 1440px;
     padding: 0 5%;
     margin: 0 auto;
+}
+
+.btn-button {
+    background-color: var(--color-orange);
+    padding: 10px 25px;
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .bg-color-geral {
@@ -33,4 +43,35 @@
 
 /* Inicio Header */
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
 
+.logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+.logo span {
+    color: var(--color-orange);
+}
+
+.texto-lista {
+    display: flex;
+    align-items: center;
+}
+
+.texto-lista li {
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.texto-lista li a {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
