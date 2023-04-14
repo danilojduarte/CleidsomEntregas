@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --color-dark-green: #14424b;
+    --color-green: #2f9364;
+    --color-orange: #ff7c37;
+    --color-yellow: #d4f70a;
+
+    --color-p: #a1a1a1;
+    --color-p-2:#868585;
+    --color-white: #fff;
+    --color-black:#000000;
+    
+}
+
+/* Classes Reutilizaveis */
+
+.container {
+    width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.bg-color-geral {
+    background-color: var(--color-dark-green);
+}
+
+
+/* Inicio Header */
+
+
