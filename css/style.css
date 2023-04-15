@@ -85,3 +85,24 @@ nav {
 .texto-lista li a:hover {
     color: var(--color-orange);
 }
+
+/* Inicio Main/Home */
+main .main-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-home .main-texto {
+    width: 100%;
+}
+
+.main-home .main-img {
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.main-home .main-img img{
+    width: 50%;
+    border-radius: 16px;
+
+}
