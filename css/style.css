@@ -8,7 +8,7 @@
 }
 
 :root {
-    --color-dark-green: #14424b;
+    --color-dark-green: #0e5664;
     --color-green: #2f9364;
     --color-orange: #ff7c37;
     --color-yellow: #d4f70a;
@@ -89,20 +89,80 @@ nav {
 /* Inicio Main/Home */
 main .main-home {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row;    
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 20px;
 }
 
 .main-home .main-texto {
-    width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main-home .main-texto h1 {
+    color: var(--color-white);
+    font-size: 60px;
+    padding-top: 40px;
+}
+.main-home .main-texto span {
+    color: var(--color-orange);
+}
+.main-home .main-texto h3 {
+    font-size: 20px;
+    color: var(--color-white);
+}
+.main-home .main-texto p {
+    font-size: 20px;
+    color: var(--color-p);
+}
+.main-home .main-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 40px;
+}
+.main-home .main-buttons .main-btn-1 {
+    background-color: var(--color-orange);
+    padding: 10px 25px;
+    font-size: 18px;
+    color: var(--color-black);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all ease-in-out .3s;
+}
+.main-home .main-buttons .main-btn-2 {
+    background-color: var(--color-orange);
+    padding: 10px 25px;
+    font-size: 18px;
+    color: var(--color-black);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all ease-in-out .3s;
+}
+.main-home .main-buttons .main-btn-3 {
+    background-color: var(--color-orange);
+    padding: 10px 25px;
+    font-size: 18px;
+    color: var(--color-black);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all ease-in-out .3s;
 }
 
 .main-home .main-img {
-    padding-left: 60px;
-    padding-top: 40px;
+    width: 50%;
+    padding-top: 20px;    
 }
 .main-home .main-img img{
-    width: 50%;
+    width: 65%;
     border-radius: 16px;
 
 }
