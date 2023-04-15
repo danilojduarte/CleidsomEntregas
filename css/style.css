@@ -31,9 +31,15 @@
     background-color: var(--color-orange);
     padding: 10px 25px;
     color: var(--color-white);
+    font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 8px;
+    transition: all ease-in-out .3s;
+}
+.btn-button:hover{
+    background-color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .bg-color-geral {
@@ -74,4 +80,8 @@ nav {
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.texto-lista li a:hover {
+    color: var(--color-orange);
 }
