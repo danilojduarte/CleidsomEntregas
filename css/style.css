@@ -125,7 +125,7 @@ main .main-home {
 }
 .main-home .main-buttons .main-btn-1 {
     background-color: var(--color-orange);
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: 18px;
     color: var(--color-black);
     font-weight: 600;
@@ -133,10 +133,14 @@ main .main-home {
     cursor: pointer;
     border-radius: 6px;
     transition: all ease-in-out .3s;
+}
+.main-home .main-buttons .main-btn-1:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
 }
 .main-home .main-buttons .main-btn-2 {
     background-color: var(--color-orange);
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: 18px;
     color: var(--color-black);
     font-weight: 600;
@@ -145,9 +149,13 @@ main .main-home {
     border-radius: 6px;
     transition: all ease-in-out .3s;
 }
+.main-home .main-buttons .main-btn-2:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+}
 .main-home .main-buttons .main-btn-3 {
     background-color: var(--color-orange);
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: 18px;
     color: var(--color-black);
     font-weight: 600;
@@ -155,11 +163,16 @@ main .main-home {
     cursor: pointer;
     border-radius: 6px;
     transition: all ease-in-out .3s;
+}
+.main-home .main-buttons .main-btn-3:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .main-home .main-img {
     width: 50%;
-    padding-top: 20px;    
+    padding: 20px 0;    
+    
 }
 .main-home .main-img img{
     width: 65%;
