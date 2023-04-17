@@ -94,6 +94,7 @@ nav {
 main .container {
     display: flex;
     align-items: center;
+    
     justify-content: space-between;
     margin-top: 30px;
 }
@@ -178,7 +179,7 @@ main .container {
 }
 .container .main-img img{
     width: 100%;
-    /* border-radius: 16px; */
+    border-radius: 16px;
 }
 
 
