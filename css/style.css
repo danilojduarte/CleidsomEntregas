@@ -124,10 +124,10 @@ main .main-home {
     padding-top: 40px;
 }
 .main-home .main-buttons .main-btn-1 {
-    background-color: var(--color-orange);
+    background-color: var(--color-white);
     padding: 10px 20px;
     font-size: 18px;
-    color: var(--color-black);
+    color: var(--color-orange);
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -135,14 +135,14 @@ main .main-home {
     transition: all ease-in-out .3s;
 }
 .main-home .main-buttons .main-btn-1:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
     color: var(--color-orange);
 }
 .main-home .main-buttons .main-btn-2 {
-    background-color: var(--color-orange);
+    background-color: var(--color-white);
     padding: 10px 20px;
     font-size: 18px;
-    color: var(--color-black);
+    color: var(--color-orange);
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -150,14 +150,14 @@ main .main-home {
     transition: all ease-in-out .3s;
 }
 .main-home .main-buttons .main-btn-2:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
     color: var(--color-orange);
 }
 .main-home .main-buttons .main-btn-3 {
-    background-color: var(--color-orange);
+    background-color: var(--color-white);
     padding: 10px 20px;
     font-size: 18px;
-    color: var(--color-black);
+    color: var(--color-orange);
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -165,7 +165,7 @@ main .main-home {
     transition: all ease-in-out .3s;
 }
 .main-home .main-buttons .main-btn-3:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
     color: var(--color-orange);
 }
 
