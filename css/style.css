@@ -26,4 +26,25 @@ body, html {
     height: 100%;
     background-color: var(--color-bgrd);
     color: var(--color-white);
+    font-size: 0.96rem;
+    font-weight: 300;
+}
+
+/* Inicio do Header  */
+header {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 0 0 10px 10px;
+}
+.logo {
+    display: inline-block;
+    padding: 6px 15px;
+
+}
+.logo a{
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.logo span {
+    color: var(--color-orange);
 }
