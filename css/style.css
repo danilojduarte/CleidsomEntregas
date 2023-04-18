@@ -61,12 +61,13 @@ header {
 }
 #toggle {
     display: inline-block;
-    padding: 11px;
+    padding: 20px;
 }
 #toggle span {
     display: block;
     width: 22px;
     height: 3px;
+    
     
     background: var(--color-p-2);
 }
@@ -88,9 +89,74 @@ nav ul li:nth-last-child(1){
     border-bottom: none;
 }
 nav a {
-    color: var(--color-white);
+    color: var(--color-orange);
     display: block;
     text-align: center;
-    font-size: 0.98rem;
+    font-size: 0.99rem;
+    font-weight: bold;
     padding: 8px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
 }
+nav a:hover {
+    color: var(--color-white);
+}
+
+/* INCIO HOME */
+.home {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 14px;
+
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+}
+.main-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.main-texto h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    line-height: 2.3rem;
+}
+.main-texto h1 span{
+    color: var(--color-orange);
+}
+.main-texto h3 {
+    color: var(--color-white);
+}
+.main-texto p {
+    font-size: 12px;
+    color: var(--color-p);
+}
+.home .main-buttons .main-btn {
+    background-color: var(--color-white);
+    width: 105px;
+    height: 3vh;
+    font-size: 12px;
+    color: var(--color-orange);
+    font-weight: 600;
+    border: none;
+    margin-bottom: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all ease-in-out .3s;
+}
+.home .main-buttons .main-btn:hover {
+    background-color: transparent;
+    color: var(--color-white);
+}
+.main-img {
+    width: 50%;
+}
+.main-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
