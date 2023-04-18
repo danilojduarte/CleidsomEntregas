@@ -13,7 +13,7 @@
     --color-orange: #ff7c37;
     --color-yellow: #d4f70a;
 
-    --color-bgrd: #162336;
+    --color-bgrd: #1a2941ca;
 
     --color-p: #a1a1a1;
     --color-p-2:#868585;
@@ -41,6 +41,8 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: absolute;
+    width: calc(100% - 14px);
 }
 .logo {
     display: inline-block;
@@ -121,7 +123,7 @@ nav a:hover {
 }
 .main-texto h1 {
     font-size: 2.5rem;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     line-height: 2.3rem;
 }
 .main-texto h1 span{
@@ -137,14 +139,14 @@ nav a:hover {
 .home .main-buttons .main-btn {
     background-color: var(--color-white);
     width: 105px;
-    height: 3vh;
+    height: 2.5vh;
     font-size: 12px;
     color: var(--color-orange);
     font-weight: 600;
     border: none;
     margin-bottom: 14px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 4px;
     transition: all ease-in-out .3s;
 }
 .home .main-buttons .main-btn:hover {
