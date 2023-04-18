@@ -34,6 +34,12 @@ body, html {
 header {
     background: rgba(255, 255, 255, 0.06);
     border-radius: 0 0 10px 10px;
+    border-bottom: rgba(255, 255, 255, 0.08) solid 1px;
+    margin:  0 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo {
     display: inline-block;
@@ -47,4 +53,19 @@ header {
 }
 .logo span {
     color: var(--color-orange);
+}
+
+#chk-toggle {
+    display: none;
+}
+#toggle {
+    display: inline-block;
+    padding: 11px;
+}
+#toggle span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    
+    background: var(--color-p-2);
 }
