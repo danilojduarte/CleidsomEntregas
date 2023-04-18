@@ -40,6 +40,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .logo {
     display: inline-block;
@@ -68,4 +69,28 @@ header {
     height: 3px;
     
     background: var(--color-p-2);
+}
+nav {
+    flex-basis: 100%;
+    height: 0;
+    overflow: hidden;
+}
+#chk-toggle:checked ~ nav {
+    height: auto;
+}
+nav ul {
+    margin: 0 15px;
+}
+nav ul li {
+    border-bottom: rgba(255, 255, 255, 0.06) solid 1px;
+}
+nav ul li:nth-last-child(1){
+    border-bottom: none;
+}
+nav a {
+    color: var(--color-white);
+    display: block;
+    text-align: center;
+    font-size: 0.98rem;
+    padding: 8px;
 }
