@@ -196,3 +196,13 @@ nav a:hover {
     border-radius: 8px;
 }
 
+/* INICIO SERVIÇOS */
+section .servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
