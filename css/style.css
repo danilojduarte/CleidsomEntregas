@@ -21,6 +21,9 @@
     --color-black: #000000;
 
 
+    font-size: 62.5%;
+
+
     /* Others colors */
     --color-brand-green-hover: #004539;
 	--color-primary-colors-brand-green: #00856f;
@@ -30,5 +33,30 @@
 	--color-secondary-colors-gray-headline: #212529;
 	--color-secondary-colors-gray-paragraph: #495057;
 	--color-secondary-colors-white: #ffffff;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h1 span {
+    color: var(--color-dark-green);
+}
+
+h4 {
+    font-size: 3.4rem;
+    color: var(--color-green);
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+button {
+    background-color: var(--color-primary-colors-brand-green);
 }
 
