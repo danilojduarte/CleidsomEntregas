@@ -20,5 +20,15 @@
     --color-white: #fff;
     --color-black: #000000;
 
+
+    /* Others colors */
+    --color-brand-green-hover: #004539;
+	--color-primary-colors-brand-green: #00856f;
+	--color-primary-colors-brand-green-light: #dce9e2;
+	--color-primary-colors-brand-green-light-02: #f7f9f9;
+	--color-primary-colors-brand-beige: #fffaf1;
+	--color-secondary-colors-gray-headline: #212529;
+	--color-secondary-colors-gray-paragraph: #495057;
+	--color-secondary-colors-white: #ffffff;
 }
 
