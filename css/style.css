@@ -95,3 +95,17 @@ button {
     margin: 6rem auto;
 }
 
+.home-cards {
+    width: 32.7rem;
+    height: 47rem;
+
+    display: flex;
+
+    flex-direction: column;
+    margin-inline: auto;
+    justify-content: center;
+    gap: 6rem;
+
+    background-color: var(--color-primary-colors-brand-beige);
+}
+
