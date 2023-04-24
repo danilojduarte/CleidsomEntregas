@@ -109,3 +109,16 @@ button {
     background-color: var(--color-primary-colors-brand-beige);
 }
 
+.home-card img {
+    width: 6.0rem;
+    height: auto;
+    margin-bottom: .4rem;
+}
+.home-card h3 {
+    font-size: 2.8rem;
+    color: var(--color-primary-colors-brand-green);
+    line-height: 130%;
+}
+
+
+
