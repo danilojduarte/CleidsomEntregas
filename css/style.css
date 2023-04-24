@@ -129,5 +129,18 @@ header .home-img {
     object-position: 0 0.6rem;
 }
 
+header::before {
+    content: "";
+    width: 100vw;
+    height: 108rem;
+    background-color: var(--color-primary-colors-brand-green-light);
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 
 
