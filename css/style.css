@@ -1,3 +1,5 @@
+/* ============== GERAL ============== */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +25,9 @@
 
     font-size: 62.5%;
 
+    --nav-height: 7.2rem;
+
+
 
     /* Others colors */
     
@@ -41,31 +46,51 @@ body {
     text-align: center;
 }
 
-header {
+/* ============== CLASSES GERAIS ============== */
+.wrapper {
     width: 37.5rem;
-    margin: 0 auto;
-    margin-top: 4.1rem;
+    margin-inline:auto;
+    padding-inline: 2.4rem;
+
+}
+
+/* ============== INICIO HEADER ============== */
+header {
+    margin-top: calc(4.1rem + var(--nav-height));
     
 }
 
-h1 {
+header::before {
+    content: '';
+    width: 100vw;
+    height: calc(108rem + var(--nav-height));
+    background-color:var(--color-primary-colors-brand-green-light);
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header h1 {
     font-size: 3.4rem;
     line-height: 130%;
     color: var(--color-black);
     margin-bottom: 2.4rem;
 }
 
-h1 span {
+header h1 span {
     color: var(--color-dark-green);
 }
 
-h4 {
+header h4 {
     font-size: 1.4rem;
     color: var(--color-green);
     margin-bottom: 1.6rem;
 }
 
-p {
+header p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -73,7 +98,7 @@ p {
     margin-bottom: 3.2rem;    
 }
 
-button {
+header button {
     background-color: var(--color-primary-colors-brand-green);
 
 
@@ -95,22 +120,6 @@ button {
     margin: 6rem auto;
 }
 
-.home-cards {
-    width: 32.7rem;
-    padding-block: 4rem;
-    margin-inline: auto;
-
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    gap: 6rem;
-
-    background-color: var(--color-primary-colors-brand-beige);
-    border: 1px solid var(--color-primary-colors-brand-green-light);
-    border-radius: 0.6rem;
-}
-
 .home-card img {
     width: 6.0rem;
     height: auto;
@@ -129,18 +138,35 @@ header .home-img {
     object-position: 0 0.6rem;
 }
 
-header::before {
-    content: "";
-    width: 100vw;
-    height: 108rem;
-    background-color: var(--color-primary-colors-brand-green-light);
-    display: block;
+.home-cards {
+    width: 32.7rem;
+    padding-block: 4rem;
+    margin-inline: auto;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+
+    background-color: var(--color-primary-colors-brand-beige);
+    border: 1px solid var(--color-primary-colors-brand-green-light);
+    border-radius: 0.6rem;
 }
 
+
+/* ============== INICIO NAVIGATION ============== */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
