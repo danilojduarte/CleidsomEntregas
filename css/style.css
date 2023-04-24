@@ -175,13 +175,13 @@ nav .wrapper {
 }
 
 nav.scroll {
-    background: var(--color-primary-colors-brand-green);
+    background:var(--color-primary-colors-brand-green);
     width: 100vw;
 }
 
 nav .logo {
     font-size: 1.6rem;
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: bold;
 }
 
