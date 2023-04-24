@@ -122,6 +122,12 @@ button {
     line-height: 130%;
 }
 
+header .home-img {
+    width: 26.4rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 0.6rem;
+}
 
 
 
