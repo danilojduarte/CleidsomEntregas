@@ -19,7 +19,7 @@
     <title>Cleidsom Entregas</title>
 </head>
 
-<body onscroll="onScroll()">
+<body onscroll="onScroll()" class="menu-expanded">
     <nav id="navegacao" class="">
         <div class="wrapper">
             <a class="logo" href="#">
@@ -36,10 +36,10 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
 
-                <button>
+                <a class="button" href="#">
                     <i class="ph ph-whatsapp-logo"></i>
                     Entre em contato
-                </button>
+                </a>
                 <ul class="social-links">
                     <li>
                         <a href="#"></a>
@@ -55,8 +55,12 @@
                     </li>
                 </ul>
             </div>
-
-            <i class="ph ph-list"></i>
+            <button class="open-menu">
+                <i class="ph ph-list"></i>
+            </button>
+            <button class="close-menu">
+                <i class="ph ph-x"></i>
+            </button>
         </div>
     </nav>
 

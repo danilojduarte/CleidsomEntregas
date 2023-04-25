@@ -41,6 +41,12 @@
     --color-secondary-colors-white: #ffffff;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-size: 1.6rem;
     text-align: center;
@@ -62,7 +68,7 @@ header {
 
 header::before {
     content: '';
-    width: 100vw;
+    width: 100%;
     height: calc(108rem + var(--nav-height));
     background-color: var(--color-primary-colors-brand-green-light);
     display: block;
@@ -193,3 +199,6 @@ nav.scroll i {
     color: var(--color-white);
     font-size: 2.8rem;
 }
+
+/* ============== INICIO MENU EXPANDED ============== */
+
