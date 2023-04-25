@@ -201,4 +201,10 @@ nav.scroll i {
 }
 
 /* ============== INICIO MENU EXPANDED ============== */
+body.menu-expanded .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--color-primary-colors-brand-green);
+}
 
