@@ -19,7 +19,8 @@
     <title>Cleidsom Entregas</title>
 </head>
 
-<body onscroll="onScroll()" class="menu-expanded">
+<body onscroll="onScroll()" class=""> 
+
     <nav id="navegacao" class="">
         <div class="wrapper">
             <a class="logo" href="#">
@@ -32,7 +33,6 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Clientes</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
 
@@ -61,10 +61,18 @@
                     </li>
                 </ul>
             </div>
-            <button class="open-menu">
+            <button
+                aria-expanded="false"
+                aria-label="Abrir menu"
+                onclick="openMenu()" 
+                class="open-menu">
                 <i class="ph ph-list"></i>
             </button>
-            <button class="close-menu">
+            <button
+                aria-expanded="True"
+                aria-label="Fechar menu"
+                onclick="closeMenu()" 
+                class="close-menu">
                 <i class="ph ph-x"></i>
             </button>
         </div>

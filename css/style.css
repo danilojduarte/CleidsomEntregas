@@ -50,6 +50,8 @@ body {
 body {
     font-size: 1.6rem;
     text-align: center;
+
+    overflow: overlay;
 }
 
 /* ============== CLASSES GERAIS ============== */
@@ -198,11 +200,22 @@ nav .logo span {
 nav.scroll i {
     color: var(--color-white);
     font-size: 2.8rem;
+    cursor: pointer;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* ============== INICIO MENU EXPANDED ============== */
 body.menu-expanded{
     overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+    display: none;
 }
 
 .menu,
@@ -227,6 +240,8 @@ body.menu-expanded .menu {
 
     width: 100vw;
     height: 100vh;
+
+    padding-top: var(--nav-height);
 }
 
 body.menu-expanded nav {
@@ -280,9 +295,11 @@ button.close-menu i {
     position: relative;
     z-index: 100;
     color: var(--color-white);
+    cursor: pointer;
 }
 
 body.menu-expanded button.close-menu i {
     color: var(--color-white);
     font-size: 2.8rem;
+    cursor: pointer;
 }
