@@ -274,3 +274,15 @@ body.menu-expanded nav {
     justify-content: center;
     gap: 3.2rem;
 }
+
+body.menu-expanded .logo,
+button.close-menu i {
+    position: relative;
+    z-index: 100;
+    color: var(--color-white);
+}
+
+body.menu-expanded button.close-menu i {
+    color: var(--color-white);
+    font-size: 2.8rem;
+}
