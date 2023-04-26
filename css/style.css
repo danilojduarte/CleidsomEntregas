@@ -22,12 +22,9 @@
     --color-white: #fff;
     --color-black: #000000;
 
-
     font-size: 62.5%;
 
     --nav-height: 7.2rem;
-
-
 
     /* Others colors */
 
@@ -72,13 +69,13 @@ section {
     padding-block: 10rem;
 }
 
-/* ============== INICIO HEADER ============== */
-header {
-    margin-top: calc(4.1rem + var(--nav-height));
+/* ============== INICIO HOME ============== */
+#home {
+    padding-top: calc(4.1rem + var(--nav-height));
 
 }
 
-header::before {
+#home::before {
     content: '';
     width: 100%;
     height: calc(108rem + var(--nav-height));
@@ -91,24 +88,24 @@ header::before {
     z-index: -1;
 }
 
-header h1 {
+#home h1 {
     font-size: 3.4rem;
     line-height: 130%;
     color: var(--color-black);
     margin-bottom: 2.4rem;
 }
 
-header h1 span {
+#home h1 span {
     color: var(--color-dark-green);
 }
 
-header h4 {
+#home h4 {
     font-size: 1.4rem;
     color: var(--color-green);
     margin-bottom: 1.6rem;
 }
 
-header p {
+#home p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -116,7 +113,7 @@ header p {
     margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
     background-color: var(--color-primary-colors-brand-green);
 
 
@@ -150,7 +147,7 @@ header button {
     line-height: 130%;
 }
 
-header .home-img {
+#home .home-img {
     width: 26.4rem;
     display: block;
     margin-inline: auto;
