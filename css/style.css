@@ -182,6 +182,12 @@ nav .wrapper {
     justify-content: space-between;
 }
 
+nav i {
+    color: var(--color-black);
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
 nav.scroll {
     background:var(--color-primary-colors-brand-green);
     width: 100vw;
