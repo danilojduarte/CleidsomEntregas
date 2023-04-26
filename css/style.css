@@ -62,6 +62,10 @@ body {
 
 }
 
+section {
+    padding-block: 10rem;
+}
+
 /* ============== INICIO HEADER ============== */
 header {
     margin-top: calc(4.1rem + var(--nav-height));
@@ -329,4 +333,30 @@ body.menu-expanded button.close-menu i {
     color: var(--color-secondary-colors-gray-headline);
 
     margin-bottom: 6rem;
+}
+
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#services .card {
+    padding: 2.4rem;
+    text-align: left;
+
+    background-color: var(--color-white);
+
+    border: 1px solid var(--color-primary-colors-brand-green-light);
+    border-radius: 1rem;
+}
+
+#services .card i {
+    font-size: 2.4rem;
+    background-color: transparent;
+    color: var(--color-primary-colors-brand-green);
+    
+}
+#services .card h4 {
+    margin-block: 1.6rem;
 }
