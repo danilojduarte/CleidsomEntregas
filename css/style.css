@@ -160,7 +160,7 @@ header .home-img {
 
     background-color: var(--color-primary-colors-brand-beige);
     border: 1px solid var(--color-primary-colors-brand-green-light);
-    border-radius: 0.6rem;
+    border-radius: 1.2rem;
 }
 
 
@@ -308,4 +308,25 @@ body.menu-expanded button.close-menu i {
     color: var(--color-white);
     font-size: 2.8rem;
     cursor: pointer;
+}
+
+/* ============== INICIO SERVICES ============== */
+#services header h4 {
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+
+    color: var(--color-primary-colors-brand-green);
+    text-transform: uppercase;
+
+    margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+
+    color: var(--color-secondary-colors-gray-headline);
+
+    margin-bottom: 6rem;
 }
