@@ -65,8 +65,45 @@ body {
 
 }
 
+/* PADRÃO DE IMAGEM */
+img {
+    max-width: 100%;
+}
+
 section {
     padding-block: 10rem;
+}
+
+section header h4 {
+    font-size: 1.4rem;
+    color: var(--color-green);
+    margin-bottom: 1.6rem;
+
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+section header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+
+    color: var(--color-secondary-colors-gray-headline);
+}
+
+section header h1 {
+    font-size: 3.4rem;
+    line-height: 130%;
+    color: var(--color-black);
+
+    margin-bottom: 2.4rem;
+}
+
+section .content p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--color-secondary-colors-gray-paragraph);
 }
 
 /* ============== INICIO NAVIGATION ============== */
@@ -96,6 +133,10 @@ nav i {
 
 nav.scroll {
     background:var(--color-primary-colors-brand-green);
+}
+
+nav.scroll .logo {
+    color: var(--color-white);
 }
 
 nav .logo {
@@ -238,21 +279,8 @@ body.menu-expanded button.close-menu i {
     z-index: -1;
 }
 
-#home h1 {
-    font-size: 3.4rem;
-    line-height: 130%;
-    color: var(--color-black);
-    margin-bottom: 2.4rem;
-}
-
 #home h1 span {
     color: var(--color-dark-green);
-}
-
-#home h4 {
-    font-size: 1.4rem;
-    color: var(--color-green);
-    margin-bottom: 1.6rem;
 }
 
 #home p {
@@ -322,23 +350,7 @@ body.menu-expanded button.close-menu i {
 
 
 /* ============== INICIO SERVICES ============== */
-#services header h4 {
-    font-size: 1.4rem;
-    line-height: 150%;
-    letter-spacing: 0.08rem;
-
-    color: var(--color-primary-colors-brand-green);
-    text-transform: uppercase;
-
-    margin-bottom: 1.6rem;
-}
-
-#services header h2 {
-    font-size: 3rem;
-    line-height: 3.9rem;
-
-    color: var(--color-secondary-colors-gray-headline);
-
+#services h2 {
     margin-bottom: 6rem;
 }
 
@@ -370,3 +382,22 @@ body.menu-expanded button.close-menu i {
 
 
 /* ============== INICIO ABOUT ============== */
+#about {
+    text-align: left;
+    background-color: var(--color-primary-colors-brand-beige);
+}
+
+#about header h2 {
+    margin-bottom: 2.4rem;
+}
+
+#about .content p {
+    margin-top: 2.4rem;
+    margin-bottom: 6rem;
+    text-align: justify;
+}
+
+#about .content img {
+    border-radius: 12px;
+}
+/* ============== FIM ABOUT ============== */
