@@ -179,10 +179,8 @@ nav {
 
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-
+    width: 100vw;
+    
     z-index: 100;
 }
 
@@ -200,7 +198,6 @@ nav i {
 
 nav.scroll {
     background:var(--color-primary-colors-brand-green);
-    width: 100vw;
 }
 
 nav .logo {
@@ -231,7 +228,7 @@ body.menu-expanded{
 }
 
 body.menu-expanded > :not(nav) {
-    display: none;
+    visibility: hidden;
 }
 
 .menu,
