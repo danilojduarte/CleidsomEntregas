@@ -128,6 +128,7 @@ nav .wrapper {
 nav i {
     color: var(--color-black);
     cursor: pointer;
+    font-size: 2.8rem;
 }
 
 nav.scroll {
@@ -231,6 +232,7 @@ body.menu-expanded .menu {
 
     display: inline-block;
     padding: 1.6rem 3.2rem;
+
 
     margin-top: 4.8rem;
     margin-bottom: 8rem;
