@@ -443,7 +443,18 @@ body.menu-expanded button.close-menu i {
 }
 
 
-
-
 /* ============== FIM CONTATO ============== */
+
+
+
+/* ============== INICIO FOOTER ============== */
+footer {
+    background-color: var(--color-primary-colors-brand-green);
+    padding-block: 6rem;
+}
+
+
+
+/* ============== FIM FOOTER ============== */
+
 
