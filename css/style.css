@@ -28,11 +28,12 @@
 
     /* Others colors */
 
+    /* hue antes -170 */
     --hue: 170;
 
-    --color-brand-green-hover: hsl(170, 100%, 14%);
-    --color-primary-colors-brand-green: hsl(170, 100%, 26%);
-    --color-primary-colors-brand-green-light: hsl(148, 23%, 89%);
+    --color-brand-green-hover: hsl(var(--hue), 100%, 14%);
+    --color-primary-colors-brand-green: hsl(var(--hue), 100%, 26%);
+    --color-primary-colors-brand-green-light: hsl(calc(--hue) -22, 23%, 89%);
     --color-primary-colors-brand-green-light-02: hsl(180, 14%, 97%);
     --color-primary-colors-brand-beige: hsl(39, 100%, 97%);
     --color-secondary-colors-gray-headline: hsl(210, 11%, 15%);
