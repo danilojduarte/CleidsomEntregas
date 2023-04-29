@@ -497,4 +497,16 @@ footer .social-links {
 /* ============== FIM FOOTER ============== */
 
 /* ============== backToTopButton ============== */
- 
+#backToTopButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+}
