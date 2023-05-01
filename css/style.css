@@ -53,12 +53,16 @@ body {
     background: var(--color-primary-colors-brand-green-light);
 }
 
+
+
 body {
     font-size: 1.6rem;
     text-align: center;
 
     overflow: overlay;
 }
+
+
 
 /* ============== CLASSES GERAIS ============== */
 .wrapper {
