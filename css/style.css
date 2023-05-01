@@ -66,7 +66,9 @@ body {
 
 /* ============== CLASSES GERAIS ============== */
 .wrapper {
-    width: 37.5rem;
+    width: min(50rem, 100%);
+    
+    /* width: 37.5rem; */
     margin-inline: auto;
     padding-inline: 2.4rem;
 
@@ -203,6 +205,15 @@ nav button {
 }
 
 
+/* Removido poisiton fixed do menu.expandend e adicionado ao NAV. Alterado para position : fixed */
+nav .menu{
+    position: fixed;
+}
+/* nav .close-menu {
+    position: fixed;
+} */
+
+
 /* ============== INICIO MENU EXPANDED ============== */
 body.menu-expanded{
     overflow: hidden;
@@ -230,7 +241,6 @@ body.menu-expanded .close-menu {
 }
 
 body.menu-expanded .menu {
-    position: fixed;
     top: 0;
     left: 0;
     background: var(--color-primary-colors-brand-green);
@@ -306,7 +316,6 @@ body.menu-expanded button.close-menu i {
     cursor: pointer;
 }
 
-
 /* ============== INICIO HOME ============== */
 #home {
     padding-top: calc(4.1rem + var(--nav-height));
@@ -366,7 +375,7 @@ body.menu-expanded button.close-menu i {
 }
 
 .home-cards {
-    width: 32.7rem;
+    width: 100%;
     padding-block: 4rem;
     margin-inline: auto;
 
