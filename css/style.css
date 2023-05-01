@@ -544,3 +544,27 @@ footer .social-links {
     transform: translateY(0);
 
 }
+
+/* ====== Responsividade ====== */
+@media (min-width: 1024px) {
+
+/* ====== GERAL ====== */
+
+/* ====== NAVIGATION ====== */
+
+
+
+
+/* ====== Reset ====== */
+    nav#navegacao .wrapper * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        transform: initial;
+    }
+}
