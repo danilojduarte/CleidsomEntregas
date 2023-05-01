@@ -206,9 +206,9 @@ nav button {
 
 
 /* Removido poisiton fixed do menu.expandend e adicionado ao NAV. Alterado para position : fixed */
-nav .menu{
+/* nav .menu{
     position: fixed;
-}
+} */
 /* nav .close-menu {
     position: fixed;
 } */
@@ -241,6 +241,7 @@ body.menu-expanded .close-menu {
 }
 
 body.menu-expanded .menu {
+    position: fixed;
     top: 0;
     left: 0;
     background: var(--color-primary-colors-brand-green);
