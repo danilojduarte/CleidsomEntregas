@@ -7,6 +7,9 @@
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     list-style: none;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -572,6 +575,7 @@ footer .social-links {
         color: initial;
         background-color: initial;
         font-weight: initial;
+        filter: initial;
     }
     nav#navegacao .close-menu,
     nav#navegacao .open-menu,
@@ -605,11 +609,18 @@ footer .social-links {
         
         color: var(--color-primary-colors-brand-green);
 
-        font-weight: 700;
+        font-weight: 500;
         font-size: 1.4rem;
         line-height: 1.8rem;
         text-transform: uppercase;
 
+    }
+
+    nav#navegacao .menu a.button:hover {
+        background-color: var(--color-primary-colors-brand-green);
+        border: none;
+        color: var(--color-white);
+        font-weight: 400;
     }
 
     nav#navegacao.scroll .menu ul li a {
@@ -627,6 +638,7 @@ footer .social-links {
         
     }
 
+    nav#navegacao .menu li a.active,
     nav#navegacao .menu li a:hover {
         opacity: 1;
         font-weight: 500;
@@ -652,15 +664,18 @@ footer .social-links {
         background-color: var(--color-white);
     }
 
+    nav#navegacao .menu li a.active::after,
     nav#navegacao .menu li a:hover::after {
         padding-inline: 0.6rem;
         width: 100%;
     }
 
+    nav#navegacao.scroll .menu li a.active,
     nav#navegacao.scroll .menu li a:hover {
         opacity: 1;
     }
 
+    nav#navegacao.scroll .menu a.button.active,
     nav#navegacao.scroll .menu a.button:hover {
         background-color: var(--color-primary-colors-brand-green);
         filter: brightness(1.3);
