@@ -699,6 +699,11 @@ footer .social-links {
     #home .col-b {
         grid-area: B
     }
+
+    #home h1 {
+        font-size: 5.2rem;
+    }
+
     #home .home-cards {
         grid-area: C;
         flex-direction: row;
