@@ -582,6 +582,9 @@ footer .social-links {
         font-weight: initial;
         filter: initial;
     }
+
+    /* ====== NAVEGAÇÃO ====== */
+
     nav#navegacao .close-menu,
     nav#navegacao .open-menu,
     nav#navegacao .social-links {
@@ -592,6 +595,22 @@ footer .social-links {
         align-items: center;
         justify-content: space-between;
         width: 60%;
+    }
+
+    nav#navegacao .logo {
+        font-size: 2rem;
+        color: var(--color-black);
+        font-weight: bold;
+    }
+
+    nav#navegacao .logo span {
+        color: var(--color-orange);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    nav#navegacao.scroll .logo {
+        color: var(--color-white);
     }
 
     nav#navegacao .menu ul:nth-child(1){
@@ -694,6 +713,7 @@ footer .social-links {
     
     #home {
         padding-top: var(--nav-height);
+        padding-top: 8rem;
     }
 
     #home .wrapper {
