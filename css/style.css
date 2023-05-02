@@ -68,13 +68,9 @@ body {
 
 
 /* ============== CLASSES GERAIS ============== */
-body {
-    overflow: auto;
-}
-
 .wrapper {
     width: min(50rem, 100%);
-    
+
     /* width: 37.5rem; */
     margin-inline: auto;
     padding-inline: 2.4rem;
@@ -146,6 +142,7 @@ section .content p {
 
     transition: all ease 200ms;
 }
+
 .button:hover {
     background-color: var(--color-brand-green-hover);
 }
@@ -159,7 +156,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100vw;
-    
+
     z-index: 100;
 }
 
@@ -176,7 +173,7 @@ nav i {
 }
 
 nav.scroll {
-    background:var(--color-primary-colors-brand-green);
+    background: var(--color-primary-colors-brand-green);
 }
 
 nav.scroll .logo {
@@ -222,11 +219,11 @@ nav button {
 
 
 /* ============== INICIO MENU EXPANDED ============== */
-body.menu-expanded{
+body.menu-expanded {
     overflow: hidden;
 }
 
-body.menu-expanded > :not(nav) {
+body.menu-expanded> :not(nav) {
     visibility: hidden;
 }
 
@@ -258,7 +255,7 @@ body.menu-expanded .menu {
 
     padding-top: var(--nav-height);
 
-    transition:transform 350ms;
+    transition: transform 350ms;
     transform: translateY(0%);
 }
 
@@ -285,7 +282,7 @@ body.menu-expanded .menu {
     font-size: 1.8rem;
     line-height: 2.3rem;
     text-transform: uppercase;
-    
+
     color: var(--color-primary-colors-brand-green);
 
     display: inline-block;
@@ -297,7 +294,7 @@ body.menu-expanded .menu {
 }
 
 .menu .button:hover {
-    background-color:var(--color-primary-colors-brand-green);
+    background-color: var(--color-primary-colors-brand-green);
     color: var(--color-white);
 
     filter: brightness(1.3);
@@ -326,6 +323,7 @@ body.menu-expanded button.close-menu i {
 
 /* ============== INICIO HOME ============== */
 #home {
+    padding-block: 0;
     padding-top: calc(4.1rem + var(--nav-height));
 
 }
@@ -333,7 +331,7 @@ body.menu-expanded button.close-menu i {
 #home::before {
     content: '';
     width: 100%;
-    height: calc(72% + var(--nav-height));
+    height: calc(76% + var(--nav-height));
     background-color: var(--color-primary-colors-brand-green-light-02);
     display: block;
 
@@ -356,10 +354,10 @@ body.menu-expanded button.close-menu i {
 }
 
 #home p {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     line-height: 150%;
     font-weight: 400;
-    color: var(--color-p);
+    color: var(--color-secondary-colors-gray-paragraph);
     margin-bottom: 3.2rem;
 }
 
@@ -424,8 +422,9 @@ body.menu-expanded button.close-menu i {
     font-size: 2.4rem;
     background-color: transparent;
     color: var(--color-primary-colors-brand-green);
-    
+
 }
+
 #services .card h4 {
     margin-block: 1.6rem;
 }
@@ -450,6 +449,7 @@ body.menu-expanded button.close-menu i {
 #about .content img {
     border-radius: 12px;
 }
+
 /* ============== FIM ABOUT ============== */
 
 /* ============== INICIO CONTATO ============== */
@@ -508,10 +508,10 @@ footer .logo span {
 }
 
 footer p {
-   color: var(--color-primary-colors-brand-beige);
-   line-height: 2;
+    color: var(--color-primary-colors-brand-beige);
+    line-height: 2;
 
-   margin-bottom: 3.2rem;
+    margin-bottom: 3.2rem;
 }
 
 footer ul li {
@@ -556,17 +556,31 @@ footer .social-links {
 /* ====== Responsividade ====== */
 @media (min-width: 1024px) {
 
-/* ====== GERAL ====== */
+    /* ====== GERAL ====== */
+    body {
+        overflow: auto;
+    }
+
     .wrapper {
         width: min(112rem, 100%);
         display: grid;
     }
-/* ====== NAVIGATION ====== */
+
+    section {
+        padding-block: 16rem;
+    }
+
+    section h2 {
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+
+    /* ====== NAVIGATION ====== */
 
 
 
 
-/* ====== Reset ====== */
+    /* ====== Reset ====== */
     nav#navegacao .wrapper * {
         margin: 0;
         padding: 0;
@@ -590,6 +604,7 @@ footer .social-links {
     nav#navegacao .social-links {
         display: none;
     }
+
     nav#navegacao .menu {
         display: flex;
         align-items: center;
@@ -613,7 +628,7 @@ footer .social-links {
         color: var(--color-white);
     }
 
-    nav#navegacao .menu ul:nth-child(1){
+    nav#navegacao .menu ul:nth-child(1) {
         display: flex;
         gap: 3.2rem;
     }
@@ -630,7 +645,7 @@ footer .social-links {
 
         border: 1px solid var(--color-primary-colors-brand-green);
         border-radius: 4rem;
-        
+
         color: var(--color-primary-colors-brand-green);
 
         font-weight: 500;
@@ -659,7 +674,7 @@ footer .social-links {
 
     nav#navegacao .menu li a {
         transition: opacity .2s;
-        
+
     }
 
     nav#navegacao .menu li a.active,
@@ -677,7 +692,7 @@ footer .social-links {
         position: relative;
         bottom: -1.8rem;
         left: -0.5rem;
-        
+
 
         display: block;
 
@@ -708,9 +723,9 @@ footer .social-links {
 
     /* ====== HOME ====== */
     #home::before {
-        height: calc(86% - var(--nav-height));
+        height: calc(96% - var(--nav-height));
     }
-    
+
     #home {
         padding-top: var(--nav-height);
         padding-top: 8rem;
@@ -718,9 +733,9 @@ footer .social-links {
 
     #home .wrapper {
         grid-template-columns: 60.5rem 1fr;
-        grid-template-areas: 
-        'A B'
-        'C C';
+        grid-template-areas:
+            'A B'
+            'C C';
     }
 
     #home .col-a {
@@ -728,6 +743,7 @@ footer .social-links {
         text-align: left;
         align-self: center;
     }
+
     #home .col-b {
         grid-area: B
     }
@@ -751,7 +767,7 @@ footer .social-links {
         gap: 0;
     }
 
-    #home .home-cards .home-card +.home-card {
+    #home .home-cards .home-card+.home-card {
         border-left: 1px solid var(--color-primary-colors-brand-green);
     }
 
@@ -762,7 +778,24 @@ footer .social-links {
     #home .button {
         margin: 0;
     }
+
     #home .col-b img {
         width: 36rem;
+    }
+
+    /* ====== SERVICES ====== */
+    #services h2 {
+        width: 47rem;
+        margin-inline: auto;
+    }
+
+    #services .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #services .card {
+        width: 30%;
+        flex-grow: 1;
     }
 }
