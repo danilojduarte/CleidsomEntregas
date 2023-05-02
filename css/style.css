@@ -68,6 +68,10 @@ body {
 
 
 /* ============== CLASSES GERAIS ============== */
+body {
+    overflow: auto;
+}
+
 .wrapper {
     width: min(50rem, 100%);
     
@@ -329,7 +333,7 @@ body.menu-expanded button.close-menu i {
 #home::before {
     content: '';
     width: 100%;
-    height: calc(108rem + var(--nav-height));
+    height: calc(72% + var(--nav-height));
     background-color: var(--color-primary-colors-brand-green-light-02);
     display: block;
 
@@ -709,7 +713,7 @@ footer .social-links {
     }
 
     #home h4 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #home h1 {
