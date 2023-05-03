@@ -37,8 +37,8 @@
     --color-brand-green-hover: hsl(var(--hue), 100%, 14%);
     --color-primary-colors-brand-green: hsl(var(--hue), 100%, 26%);
     --color-primary-colors-brand-green-light: hsl(calc(--hue) -22, 23%, 89%);
-    --color-primary-colors-brand-green-light-02: hsl(180, 14%, 97%);
-    --color-primary-colors-brand-beige: hsl(39, 100%, 97%);
+    --color-primary-colors-brand-green-light-02: hsla(180, 5%, 88%, 0.936);
+    --color-primary-colors-brand-beige: hsl(41, 85%, 82%);
     --color-secondary-colors-gray-headline: hsl(210, 11%, 15%);
     --color-secondary-colors-gray-paragraph: hsl(210, 9%, 31%);
     --color-secondary-colors-white: hsl(0, 0%, 100%);
@@ -88,7 +88,7 @@ section {
 }
 
 section header h4 {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     color: var(--color-green);
     margin-bottom: 1.6rem;
 
@@ -333,7 +333,8 @@ body.menu-expanded button.close-menu i {
     content: '';
     width: 100%;
     height: calc(76% + var(--nav-height));
-    background-color: var(--color-primary-colors-brand-green-light-02);
+    background-color:var(--color-primary-colors-brand-green-light-02);
+    
     display: block;
 
     position: absolute;
