@@ -26,12 +26,17 @@ function activaMenuPorSection(section) {
   // console.log ('O fim da section é',
   // sectionEndPassedTargetLine)
 
-  const sectionBoundAries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+  const sectionBoundAries = sectionTopReachOrPassedTargetLine 
+  && !sectionEndPassedTargetLine
+
+
+  const sectionId = section.getAttribute('id')
+  const menuElement = document.
+  querySelector(`.menu a[href*=${sectionId}]`)
 
   if (sectionBoundAries) {
-    console.log('Estou na seção HOME')
+    menuElement.classList.add('active')
   }
-
 }
 
 
