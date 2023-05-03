@@ -511,12 +511,13 @@ footer .logo {
 
 footer .logo span {
     font-weight: bold;
+    color: var(--color-orange);
 }
 
 footer p {
-    color: var(--color-primary-colors-brand-beige);
+    color: var()--color-secondary-colors-gray-paragraph;
     line-height: 2;
-
+    font-size: 1.8rem;
     margin-bottom: 3.2rem;
 }
 
