@@ -5,9 +5,13 @@ function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
   activaMenuPorSection(home)
+  activaMenuPorSection(services)
+  activaMenuPorSection(about)
+  activaMenuPorSection(contato)
 }
 
 function activaMenuPorSection(section) {
+
   const targetLine = scrollY + innerHeight / 2
 
   const sectionTop = section.offsetTop
@@ -15,16 +19,9 @@ function activaMenuPorSection(section) {
 
   const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
 
-  // console.log (
-  //   'O topo da seção é ', sectionTopReachOrPassedTargetLine
-  // )
-
   const sectionEndsAt = sectionTop + sectionHeight
 
   const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
-
-  // console.log ('O fim da section é',
-  // sectionEndPassedTargetLine)
 
   const sectionBoundAries = sectionTopReachOrPassedTargetLine 
   && !sectionEndPassedTargetLine
@@ -34,15 +31,11 @@ function activaMenuPorSection(section) {
   const menuElement = document.
   querySelector(`.menu a[href*=${sectionId}]`)
 
+  menuElement.classList.remove('active')
   if (sectionBoundAries) {
     menuElement.classList.add('active')
   }
 }
-
-
-
-
-
 
 
 function showNavOnScroll() {
