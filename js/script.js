@@ -4,7 +4,22 @@ onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
+  activaMenuPorSection()
 }
+
+function activaMenuPorSection() {
+  
+
+
+
+
+}
+
+
+
+
+
+
 
 function showNavOnScroll() {
   if (scrollY > 0) {
