@@ -819,6 +819,10 @@ footer .social-links {
         margin-bottom: 0;
     }
 
+    #about .col-b img {
+        border-radius: 12px;
+    }
+
     /* ====== CONTATO ====== */
     #contato .wrapper {
         grid-template-columns: 1fr 57.5rem;
