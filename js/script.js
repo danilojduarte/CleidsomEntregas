@@ -16,11 +16,9 @@ function activaMenuPorSection(section) {
 
   const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
-
   const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
 
   const sectionEndsAt = sectionTop + sectionHeight
-
   const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
 
   const sectionBoundAries = sectionTopReachOrPassedTargetLine 
