@@ -181,6 +181,10 @@ nav.scroll .logo {
     color: var(--color-white);
 }
 
+nav.scroll .logo span {
+    color: var(--color-primary-colors-brand-beige);
+}
+
 nav .logo {
     font-size: 1.6rem;
     color: var(--color-black);
@@ -511,7 +515,7 @@ footer .logo {
 
 footer .logo span {
     font-weight: bold;
-    color: var(--color-orange);
+    color: var(--color-primary-colors-brand-beige);
 }
 
 footer p {
@@ -639,6 +643,10 @@ footer .social-links {
 
     nav#navegacao.scroll .logo {
         color: var(--color-white);
+    }
+
+    nav#navegacao.scroll .logo span {
+        color: var(--color-primary-colors-brand-beige);
     }
 
     nav#navegacao .menu ul:nth-child(1) {
