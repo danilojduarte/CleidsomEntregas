@@ -4,12 +4,29 @@ onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
-  activaMenuPorSection()
+  activaMenuPorSection(home)
 }
 
-function activaMenuPorSection() {
-  
+function activaMenuPorSection(section) {
+  const targetLine = scrollY + innerHeight / 2
 
+  const sectionTop = section.offsetTop
+  const sectionHeight = section.offsetHeight
+
+  const sectionTopOrPassedTargetLine = targetLine >= sectionTop
+
+  console.log (
+    'O topo da seção é ', sectionTopOrPassedTargetLine
+  )
+
+  const sectionEndsAt = sectionTop + sectionHeight
+
+  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
+
+  console.log ('O fim da section é',
+  sectionEndPassedTargetLine)
+
+  const sectionBoundAries = sectionEndPassedTargetLine && 
 
 
 
@@ -62,3 +79,9 @@ ScrollReveal({
 #about header,
 #about .content
 `);
+
+
+
+// function sayMyName() {
+//   console.log(nome)
+// }
