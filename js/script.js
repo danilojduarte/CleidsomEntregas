@@ -13,22 +13,24 @@ function activaMenuPorSection(section) {
   const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
 
-  const sectionTopOrPassedTargetLine = targetLine >= sectionTop
+  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
 
-  console.log (
-    'O topo da seção é ', sectionTopOrPassedTargetLine
-  )
+  // console.log (
+  //   'O topo da seção é ', sectionTopReachOrPassedTargetLine
+  // )
 
   const sectionEndsAt = sectionTop + sectionHeight
 
   const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
 
-  console.log ('O fim da section é',
-  sectionEndPassedTargetLine)
+  // console.log ('O fim da section é',
+  // sectionEndPassedTargetLine)
 
-  const sectionBoundAries = sectionEndPassedTargetLine && 
+  const sectionBoundAries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
 
-
+  if (sectionBoundAries) {
+    console.log('Estou na seção HOME')
+  }
 
 }
 
